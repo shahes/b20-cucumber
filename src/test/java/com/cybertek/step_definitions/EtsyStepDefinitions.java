@@ -15,6 +15,9 @@ public class EtsyStepDefinitions {
     @Given("User is  on the home page")
     public void user_is_on_the_home_page() {
         Driver.getDriver().get("https://www.etsy.com/");
+
+
+        Driver.getDriver().manage().window().maximize();
     }
 
 
