@@ -3,7 +3,7 @@ Feature: Login
   Agile Story:As a user, I should be able to login with correct credentials to different accounts
 #This is how you comment in feature file
 
-  @librarian
+  @librarian @smoke
   Scenario: Librarian login scenario
 
     Given user is on the login page

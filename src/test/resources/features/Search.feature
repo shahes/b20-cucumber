@@ -10,12 +10,12 @@ Feature:Search
     Then User should see title is Google
 
 
-  @wip # work in progress
+  @wip   @smoke # work in progress
   Scenario: Google title verification after search
     When User searches apple
     Then User should see apple in the title
 
-  @hey
+  @hey @smoke
   Scenario: Google title verification after search
     When User searches "peach"
     Then User should see "peach" in the title
@@ -27,7 +27,7 @@ Feature:Search
     And User clicks to About link
     Then User should see title Google - About Google, Our Culture & Company News
 
-  @dataTable
+  @dataTable @smoke
   Scenario: Multiple search item verification
   // When User enters 3 search items
     Then User should see all of them below
